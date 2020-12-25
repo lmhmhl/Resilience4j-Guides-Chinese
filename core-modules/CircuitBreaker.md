@@ -6,7 +6,7 @@
 
 断路器通过有限状态机实现，有三个普通状态：关闭、开启、半开，还有两个特殊状态：禁用、强制开启。
 
-![avatar](/Users/lmh/Documents/R4j guide in chinese version/images/39cdd54-state_machine.jpg)
+![avatar](https://github.com/lmhmhl/Resilience4j-Guides-Chinese/blob/main/images/39cdd54-state_machine.jpg)
 
 断路器使用滑动窗口来存储和统计调用的结果。你可以选择基于调用数量的滑动窗口或者基于时间的滑动窗口。基于访问数量的滑动窗口统计了最近N次调用的返回结果。居于时间的滑动窗口统计了最近N秒的调用返回结果。
 
@@ -62,13 +62,13 @@
 
 一个线程的例子:
 
-- ![avatar](/Users/lmh/Documents/R4j guide in chinese version/images/45dc011-Thread1.PNG)
+- ![avatar](https://github.com/lmhmhl/Resilience4j-Guides-Chinese/blob/main/images/45dc011-Thread1.PNG)
 
 > 
 
 三个线程的例子:
 
-- ![avatar](/Users/lmh/Documents/R4j guide in chinese version/images/8d10418-Multiplethreads.PNG)
+- ![avatar](https://github.com/lmhmhl/Resilience4j-Guides-Chinese/blob/main/images/8d10418-Multiplethreads.PNG)
 
 > 
 
