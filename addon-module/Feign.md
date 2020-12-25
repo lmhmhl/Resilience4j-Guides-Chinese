@@ -2,7 +2,7 @@
 
 一个Java到HTTP客户机绑定器，灵感来自于Retrofit、JAXRS-2.0和WebSocket。https://github.com/OpenFeign/feign
 
-Resilience4j作为Feign的装饰器。类似https://github.com/OpenFeign/feign/tree/master/hystrix[HystrixFeign]，resilience4j-feign 可以很容易地将“容错”模式纳入feign框架，例如断路器和限流器。
+Resilience4j作为Feign的装饰器。类似https://github.com/OpenFeign/feign/tree/master/hystrix[HystrixFeign] ， resilience4j-feign 可以很容易地将“容错”模式纳入feign框架，例如断路器和限流器。
 
 ## 目前的特性
 
