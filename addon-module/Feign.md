@@ -78,7 +78,9 @@ public interface MyService {
 ```
 
 在本例中，当抛出`FeignException`时（通常是在HTTP请求失败时）调用`requestFailedFallback`，而只有在`CircuitBreakerOpenException`的情况下才会调用`circuitBreakerFallback`。检查`FeignDecorators`类以获得更多降级的方法。
+
 ![avatar](https://github.com/lmhmhl/Resilience4j-Guides-Chinese/blob/main/images/4c8e8ba-feign-decorators.png)
+
 所有降级方法必须实现“目标”中声明的相同接口（Resilience4jFeign.Builder#target)方法，否则将引发IllegalArgumentException。
 
 可以指定多个降级方法来处理同一个异常，当上一个降级方法调用失败时，将调用下一个降级方法。
