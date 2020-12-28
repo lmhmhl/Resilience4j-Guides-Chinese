@@ -1,6 +1,6 @@
 
 这是Resilience4j的非官方中文文档。
-This is unofficial Japanese translation of [Resilience4j documentations](https://resilience4j.readme.io/).
+This is unofficial Chinese translation of [Resilience4j documentations](https://resilience4j.readme.io/).
 ## Resilience4j中文文档
 * [resilience4j中文文档](https://github.com/lmhmhl/Resilience4j-Guides-Chinese/blob/main/index.md)
 
