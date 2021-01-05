@@ -1,6 +1,6 @@
 # Gradle
 
-这些项目需要JDK 8。该项目在JCenter和Maven Central上发布。
+这些项目需要使用JDK 8。该项目在JCenter和Maven Central上发布。
 如果您使用Gradle，您可以包括resilient4j模块，如下所示。
 
 ```groovy
