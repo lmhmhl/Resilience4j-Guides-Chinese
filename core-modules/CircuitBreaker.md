@@ -121,15 +121,15 @@ CircuitBreakerConfig circuitBreakerConfig = CircuitBreakerConfig.custom()
 
 // 使用默认配置创建circuitBreakerRegistry
 CircuitBreakerRegistry circuitBreakerRegistry = 
-  CircuitBreakerRegistry.of(circuitBreakerConfig);
+  CircuitBreakerRegistry.ofDefaults();
 
 // 使用circuitBreakerRegistry创建断路器，配置是默认配置 
 CircuitBreaker circuitBreakerWithDefaultConfig = 
   circuitBreakerRegistry.circuitBreaker("name1");
 
-// 使用circuitBreakerRegistry创建断路器，配置是自定义配置
-CircuitBreaker circuitBreakerWithCustomConfig = circuitBreakerRegistry
-  .circuitBreaker("name2", circuitBreakerConfig);
+// 使用circuitBreakerConfig创建注册器，进而创建断路器，配置是自定义配置
+CircuitBreaker circuitBreakerWithCustomConfig = 
+  CircuitBreakerRegistry.of(circuitBreakerConfig).circuitBreaker("diy");
 ```
 
 你可以添加配置被多个断路器实例共享。
